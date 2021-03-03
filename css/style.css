@@ -108,3 +108,24 @@ body {
   width: 100%;
   margin: 2em auto;
 }
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.container .box {
+  width: 100%;
+}
+.container .box img {
+  width: 100%;
+  display: block;
+}
+
+.container .box:nth-child(1) {
+  grid-column: 1 / 2;
+}
+
+.container .box:nth-child(2) {
+  grid-column: 2 / 2;
+}
